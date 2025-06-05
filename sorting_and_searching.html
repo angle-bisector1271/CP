@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sorting and Searching</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <h1>Sorting and Searching</h1>
+  <p>This is the classic 2-sum problem. The goal is to find two distinct elements in an array whose sum equals a given target value.</p>
+  <p>I began by pairing each element with its original index using tuples of the form <code>(value, index)</code>. After constructing this list of tuples, I sorted the array based on the value.</p>
+  <p>Once sorted, I applied the standard two-pointer approach: I initialized two pointers — one at the beginning (<code>left</code>) and one at the end (<code>right</code>) of the array.</p>
+  <p>In each iteration, I checked the sum of the two values at the pointers. If the sum was less than the target, I incremented the <code>left</code> pointer. If it was greater, I decremented the <code>right</code> pointer. If the sum equaled the target, I had found my solution.</p>
+  <p>If the pointers crossed without finding such a pair, I concluded that no valid solution exists.</p>
+</body>
+</html>
